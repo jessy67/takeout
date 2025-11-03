@@ -16,6 +16,7 @@ public class Employee implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+
     private Long id;
 
     private String username;
@@ -42,4 +43,109 @@ public class Employee implements Serializable {
 
     private Long updateUser;
 
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+   
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+
+
+    public void setUpdateUser(Long updateUser) {
+        this.updateUser = updateUser;
+    }
+
+    public void setUpdateTime(LocalDateTime now) {
+        this.updateTime = now;
+    }
+
+    public void setCreateTime(LocalDateTime now) {
+        this.createTime = now;
+    }
+
+    public void setCreateUser(long l) {
+        this.createUser = l;
+    }
+    
+    // public static long getSerialVersionUID() {
+    //     return serialVersionUID;
+    // }
+
+    // public Long getId() {
+    //     return id;
+    // }
+
+    public Long getUpdateUser() {
+        return updateUser;
+    }
+    public LocalDateTime getUpdateTime() {
+        return updateTime;
+    }
+
+    public Long getCreateUser() {
+        return createUser;
+    }
+    public LocalDateTime getCreateTime() {
+        return createTime;
+    }
+ public Integer getStatus() {
+        return status;
+    }
+    public String getIdNumber() {
+        return idNumber;
+    }
+    public String getSex() {
+        return sex;
+    }
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getUsername() {
+        return username;
+    }
 }
